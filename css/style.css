@@ -45,7 +45,6 @@ li:hover {
 li input[type=radio]:checked + label {
   font-size: 1.3em;
   padding: 0px 3px;
-  flot: left;
   color: #3b99fb;
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
