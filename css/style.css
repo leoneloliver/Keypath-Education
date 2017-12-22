@@ -1,4 +1,4 @@
-* css here */
+/* css here */
 body {
   font-family: Helvetica;
   margin: 0;
@@ -7,23 +7,27 @@ body {
 li label {
   font-size: 14px;
   color: #424242;
-  vertical-align: super;
+  vertical-align: top;
   margin-left: 10px;
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
   -o-transition: all 0.9s ease;
   -ms-transition: all 0.9s ease;
   transition: all 0.9s ease;
+  display: block;
+  padding: 14px 0;
 }
 
 input.answer[type="radio"] {
   padding: 0px 0px;
-  margin-top: 8px;
+  margin-top: -4px;
+  float: left;
+  margin-right: 11px;
 }
 
 li {
   background: #FFFFFF;
-  padding: 10px 10px;
+  padding: 5px 10px;
   border-bottom: 1px solid #efefef;
   list-style: none;
   -webkit-transition: all 0.9s ease;
@@ -31,21 +35,11 @@ li {
   -o-transition: all 0.9s ease;
   -ms-transition: all 0.9s ease;
   transition: all 0.9s ease;
+  height: 43px;
 }
 
 li:hover {
   background: #efefef;
-  -webkit-transition: all 0.9s ease;
-  -moz-transition: all 0.9s ease;
-  -o-transition: all 0.9s ease;
-  -ms-transition: all 0.9s ease;
-  transition: all 0.9s ease;
-}
-
-li input[type=radio]:checked + label {
-  font-size: 1.3em;
-  padding: 0px 3px;
-  color: #3b99fb;
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
   -o-transition: all 0.9s ease;
@@ -234,8 +228,13 @@ p.first-section, p.second-section, p.third-section {
 }
 
 .header {
-  height: 30px;
   background: #215d96;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  color: #FFFFFF;
+  padding: 3px;
+  text-align: center;
+  text-shadow: 0px 2px 1px #55c8fb;
 }
 
 .bar-top {
@@ -370,6 +369,6 @@ p.first-section, p.second-section, p.third-section {
 
   input.answer[type="radio"] {
     padding: 12px 12px;
-    margin-top: 2px;
+    margin-top: -9px;
   }
 }
