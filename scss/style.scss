@@ -7,6 +7,7 @@ $font-small: 1.2em;
 $font-medium: 1.3em;
 $font-weight-normal: 100;
 $font-weight-heavy: 400;
+$font-logo: 'Oswald', sans-serif;
 // colors
 $white: #FFFFFF;
 $green: #65b971;
@@ -41,32 +42,30 @@ body{
 li label {
   font-size: $font-field;
   color: $dark ;
-  vertical-align: super;
+  vertical-align: top;
   margin-left: 10px;
   @include transition-object(.9s);
+  display: block;
+  padding: 14px 0;
 }
 input.answer[type="radio"] {
-  padding: 0px 0px;
-  margin-top: 8px;
+  adding: 0px 0px;
+  margin-top: -4px;
+  float: left;
+  margin-right: 11px;
 }
 li{
   background: $white;
-  padding: 10px 10px;
+  padding: 5px 10px;
   border-bottom: 1px solid #efefef;
   list-style: none;
   @include transition-object(.9s);
+  height: 43px;
 }
 li:hover{
   background: $light;
   @include transition-object(.9s);
 }
-li input[type=radio]:checked +label{
-  font-size: $font-medium;
-  padding: 0px 3px;
-  flot: left;
-  color: $blue-light;
-  @include transition-object(.9s);
-} 
 .next {
   cursor: pointer;
   width: 90%;
@@ -160,6 +159,7 @@ p.first-section, p.second-section, p.third-section {
     background: #4099ffbf;
   }
 }
+
 .chart_0{
   width: 5%;
   background: #ccc;
@@ -169,28 +169,37 @@ p.first-section, p.second-section, p.third-section {
   width: 25%;
   background: red;
   @include transition-object(.9s);
+  
 }
 .chart_50{
   width: 50%;
   background: orange;
   @include transition-object(.9s);
+  
 }
 .chart_75{
   width: 75%;
   background: $green;
   @include transition-object(.9s);
+  
 }
 .chart_100{
   width: 100%;
   background: #027913;
   @include transition-object(.9s);
+  
 }
 .grad {
    background: linear-gradient(#58ccfb, #2e80fb);
 }
 .header{
-  height: 30px;
   background: $blue-dark;
+  font-family: $font-logo;
+  font-size: 2em;
+  color: $white;
+  padding: 3px;
+  text-align: $center;
+  text-shadow: 0px 2px 1px #55c8fb;
 }
 .bar-top {
   width: 100%;
@@ -285,6 +294,6 @@ p.first-section, p.second-section, p.third-section {
   }
   input.answer[type="radio"] {
     padding: 12px 12px;
-    margin-top: 2px;
+    margin-top: -9px;
   }
 }
