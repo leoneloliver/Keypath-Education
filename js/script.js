@@ -87,12 +87,14 @@ function submitAnswers() {
      congrats = "Perfect Score!";
   };
   // document.getElementById('final-score').innerHTML = showScore +' and '+ showScore2 +' and '+ showScore3;
-  var firstclass = 'chart_'+(calcScore/questionCounter)*100;
-  $('.chart-one').addClass(firstclass);
-  var secondclass = 'chart_'+(calcScore2/questionCounter2)*100;
-  $('.chart-two').addClass(secondclass);
-  var thirdclass = 'chart_'+(calcScore3/questionCounter3)*100;
-  $('.chart-three').addClass(thirdclass);
+  setTimeout(function(){
+    var firstclass = 'chart_'+(calcScore/questionCounter)*100;
+    $('.chart-one').addClass(firstclass);
+    var secondclass = 'chart_'+(calcScore2/questionCounter2)*100;
+    $('.chart-two').addClass(secondclass);
+    var thirdclass = 'chart_'+(calcScore3/questionCounter3)*100;
+    $('.chart-three').addClass(thirdclass);
+  },1000);
 
   var result1 = document.getElementsByClassName('section1');
   var result2 = document.getElementsByClassName('section2');
@@ -111,10 +113,11 @@ function submitAnswers() {
 }
   
 $(document).ready(function() {
+  
   function goTop(){
     $("html, body").animate({ scrollTop: 0 }, "slow");
   }
-
+  
   // sumbit button hider
 	$('#submit-button').click(function() {
 		$(this).addClass('hide');
