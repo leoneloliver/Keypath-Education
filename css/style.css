@@ -49,14 +49,15 @@ li:hover {
 
 .next, input[type="submit"] {
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   padding: 10px;
   background: #ff9609;
   color: #FFFFFF;
   text-align: center;
-  font-size: 1.5em;
-  box-shadow: 1px 2px 4px #757575;
+  font-size: 1.2em;
+  box-shadow: 1px 1px 4px #000;
+  box-sizing: border-box;
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
   -o-transition: all 0.9s ease;
@@ -146,6 +147,8 @@ p.first-section, p.second-section, p.third-section {
 .score__content {
   padding: 35px 5px;
   text-align: center;
+  font-size: 1.3em;
+  color: #215d96;
 }
 
 .h10 {
@@ -171,6 +174,16 @@ p.first-section, p.second-section, p.third-section {
 .answer:checked {
   border: 5px solid #4099ff;
   background: #4099ffbf;
+}
+
+.ico-score {
+  color: #215d96;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.ico-love {
+  color: #ff0084;
 }
 
 .chart_0 {
@@ -224,7 +237,7 @@ p.first-section, p.second-section, p.third-section {
 }
 
 .grad {
-  background: linear-gradient(#58ccfb, #2e80fb);
+  background: linear-gradient(#1a1b1b, #073c82);
 }
 
 .header {
