@@ -23,7 +23,7 @@ $submit: #09ba22;
 $red: red;
 $love: #ff0084;
 //sizes
-$h10: 10px;
+$h10: 25px;
 $medium-device: 928px;
 $small-device: 500px;
 //position
@@ -142,7 +142,8 @@ p.first-section, p.second-section, p.third-section {
   color: $blue-dark;
 }
 .h10{
- height: $h10; 
+ height: $h10;
+ border-radius: 50px;
 }
 :focus{
   outline:none !important;
@@ -265,7 +266,7 @@ p.first-section, p.second-section, p.third-section {
   background: $red;
   color: $white;
   margin: 11px;
-  max-width: 300px;
+  max-width: 200px;
   margin: auto;
   cursor: pointer;
   width: 80%;
