@@ -153,6 +153,7 @@ p.first-section, p.second-section, p.third-section {
 
 .h10 {
   height: 10px;
+  border-radius: 50px;
 }
 
 :focus {
@@ -332,7 +333,7 @@ p.first-section, p.second-section, p.third-section {
   background: red;
   color: #FFFFFF;
   margin: 11px;
-  max-width: 300px;
+  max-width: 200px;
   margin: auto;
   cursor: pointer;
   width: 80%;
