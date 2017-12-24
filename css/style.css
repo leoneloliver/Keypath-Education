@@ -330,13 +330,13 @@ p.first-section, p.second-section, p.third-section {
   clear: both;
   padding: 10px;
   text-align: center;
-  background: red;
-  color: #FFFFFF;
+  background: #424242;
+  color: #efefef;
   margin: 11px;
-  max-width: 200px;
+  max-width: 130px;
   margin: auto;
   cursor: pointer;
-  width: 80%;
+  width: 50%;
   box-shadow: 1px 2px 4px #797979;
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
@@ -345,7 +345,7 @@ p.first-section, p.second-section, p.third-section {
   transition: all 0.9s ease;
 }
 #clean-data:hover {
-  background: #c20505;
+  background: #215d96;
 }
 
 #congrats {
@@ -365,6 +365,39 @@ p.first-section, p.second-section, p.third-section {
   margin-top: 30px;
 }
 
+@media only screen and (min-width: 800px) {
+  .item-chart {
+    width: 100%;
+    float: left;
+    height: auto !important;
+    padding: 9px 100px;
+    box-sizing: border-box;
+    margin-top: -1px;
+    border: 1px solid #efefef;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .progress-chart-bar {
+    background: #ccc;
+    float: right;
+    width: 66%;
+    text-align: left;
+  }
+
+  .final-scores {
+    text-align: center;
+    padding-top: 15px;
+    float: left !important;
+    width: 30%;
+    text-align: left;
+  }
+
+  .h10 {
+    height: 40px;
+    border-radius: 0;
+  }
+}
 @media only screen and (max-width: 928px) {
   .item-chart {
     width: 100%;
