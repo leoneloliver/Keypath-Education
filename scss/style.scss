@@ -142,7 +142,7 @@ p.first-section, p.second-section, p.third-section {
   color: $blue-dark;
 }
 .h10{
- height: $h10;
+ height: $h10; 
  border-radius: 50px;
 }
 :focus{
@@ -263,17 +263,17 @@ p.first-section, p.second-section, p.third-section {
   clear: both;
   padding: 10px;
   text-align: $center;
-  background: $red;
-  color: $white;
+  background: $dark;
+  color: $light;
   margin: 11px;
-  max-width: 200px;
+  max-width: 130px;
   margin: auto;
   cursor: pointer;
-  width: 80%;
+  width: 50%;
   box-shadow: 1px 2px 4px #797979;
   @include transition-object(.9s);
   &:hover{
-    background: #c20505;
+    background: $blue-dark;
   }
 }
 #congrats {
@@ -290,6 +290,36 @@ p.first-section, p.second-section, p.third-section {
   background: $blue-dark;
   padding: 30px;
   margin-top: 30px;
+}
+@media only screen and (min-width: $small-device+200){
+  .item-chart {
+    width: 100%;
+    float: left;
+    height: auto !important;
+    padding: 9px 100px;
+    box-sizing: border-box;
+    margin-top: -1px;
+    border: 1px solid $light;
+    border-left: 0;
+    border-right: 0;
+  }
+  .progress-chart-bar {
+    background: $grey;
+    float: right;
+    width: 66%;
+    text-align: left;
+  }
+  .final-scores {
+    text-align: $center;
+    padding-top: 15px;
+    float: left !important;
+    width: 30%;
+    text-align: left;
+  }
+  .h10 {
+    height: 40px;
+    border-radius: 0;
+  }
 }
 @media only screen and (max-width: $medium-device){
   .item-chart {
@@ -310,3 +340,4 @@ p.first-section, p.second-section, p.third-section {
     margin-top: -9px;
   }
 }
+
