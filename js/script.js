@@ -84,7 +84,7 @@ function submitAnswers() {
 // if 4/4, "perfect score!"
   var congrats = "";
   if (calcScore === questionCounter && calcScore2 === questionCounter2 && calcScore3 === questionCounter3) {
-     congrats = "Perfect Score!";
+     congrats = "<i class='fa fa-trophy'></i><br/>Perfect Score!";
   };
   // document.getElementById('final-score').innerHTML = showScore +' and '+ showScore2 +' and '+ showScore3;
   setTimeout(function(){
