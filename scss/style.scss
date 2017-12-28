@@ -125,7 +125,7 @@ p.first-section, p.second-section, p.third-section {
   color: $blue-dark;
 }
 .hide {
-	display: none;
+  display: none;
   @include transition-object(.9s);
 }
 #score{
@@ -257,7 +257,10 @@ p.first-section, p.second-section, p.third-section {
   padding-top: 15px;
 }
 .final-scores span {
-  font-weight: 700;
+    font-weight: unset;
+    font-size: $font-field+8;
+    float: right;
+    margin-top: -4px;
 }
 #clean-data {
   clear: both;
@@ -320,12 +323,16 @@ p.first-section, p.second-section, p.third-section {
     height: 40px;
     border-radius: 0;
   }
+
 }
 @media only screen and (max-width: $medium-device){
   .item-chart {
     width: 100%;
     height: 112px;
     margin-top: 0;
+  }
+  .final-scores span{
+    float: none;
   }
 }
 @media only screen and (max-width: $small-device){
