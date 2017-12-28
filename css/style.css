@@ -323,7 +323,10 @@ p.first-section, p.second-section, p.third-section {
 }
 
 .final-scores span {
-  font-weight: 700;
+    font-weight: 700;
+    font-size: 22px;
+    float: right;
+    margin-top: -4px;
 }
 
 #clean-data {
@@ -397,12 +400,16 @@ p.first-section, p.second-section, p.third-section {
     height: 40px;
     border-radius: 0;
   }
+
 }
 @media only screen and (max-width: 928px) {
   .item-chart {
     width: 100%;
     height: 112px;
     margin-top: 0;
+  }
+  .final-scores span{
+    float: none;
   }
 }
 @media only screen and (max-width: 500px) {
