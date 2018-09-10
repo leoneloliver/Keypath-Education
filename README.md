@@ -1,7 +1,7 @@
 # Keypath-Education
 
 It is Quiz prototype <br>
-[Demo here](http://onclickmidia.net/Keypath-Education/) 
+[Demo here](https://quizify.netlify.com/) 
 
 ## Technologies
 - HTML/HTML5
